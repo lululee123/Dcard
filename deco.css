@@ -84,6 +84,7 @@ a[href="#delete"] {
     top: 0;
     padding: 1.6rem 1.6rem 1.2rem 1.6rem;
     text-decoration: none;
+    color: #006aa6;
 }
 
 a[href="#delete"]:hover {
@@ -98,6 +99,7 @@ a[href="#edit"] {
     top: 0;
     padding: 1.6rem 1.6rem 1.2rem 1.6rem;
     text-decoration: none;
+    color: #006aa6;
 }
 
 a[href="#edit"]:hover {
