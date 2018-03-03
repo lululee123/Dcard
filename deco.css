@@ -1,6 +1,8 @@
 /* Include the padding and border in an element's total width and height */
 * {
     box-sizing: border-box;
+    -webkit-user-select: none;
+    user-select: none;
 }
 html {
   font-size: 10px;/*1rem = root font size = 10px; 10px/16px = 62.5*/
@@ -200,4 +202,11 @@ input {
 
 .nofilter:hover {
     background-color: #bbb;
+}
+
+input,
+textarea,
+[contenteditable] {
+    -webkit-user-select: text;
+    user-select: text;
 }
