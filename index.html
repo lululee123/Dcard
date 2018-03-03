@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lng="zh-Hant-TW">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+		<meta name="description" content="">
+		<meta name="author" content="Lulu Lee">
+		<title>Todo list</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="deco.css">
+    <script src="function.js"></script>
+	</head>
+  <body>
+
+    <div id="myDIV" class="header">
+      <h2>To Do List</h2>
+      <input type="text" id="myInput" placeholder="任務">
+      <span onclick="newElement()" class="addBtn">新增</span>
+      <span onclick="doneFilter()" class="donefilter">已完成</span>
+      <span onclick="notDoneFilter()" class="notdonefilter">未完成</span>
+      <span onclick="noFilter()" class="nofilter">所有任務</span>
+    </div>
+    <ul id="myUL">
+    </ul>
+
+    <script>
+
+    // Add a "checked" symbol when clicking on a list item
+    var list = document.querySelector('ul');
+    list.addEventListener('click', function(ev) {
+      if (ev.target.tagName === 'LI') {
+        ev.target.classList.toggle('checked');
+      }
+    }, false);
+
+   //can notpress enter after edit
+    $('ul').bind('keypress', function(e)
+    {
+       if(e.keyCode == 13)
+       {
+          return false;
+       }
+    });
+
+    //add to do by enter
+    $('#myInput').bind('keypress', function(e)
+    {
+       if(e.keyCode == 13)
+       {
+          newElement();
+       }
+    });
+
+    </script>
+  </body>
+</html>

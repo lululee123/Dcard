@@ -1,0 +1,203 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+}
+html {
+  font-size: 10px;/*1rem = root font size = 10px; 10px/16px = 62.5*/
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;/*1rem = root font size = 10px; 10px/16px = 62.5*/
+  }
+}
+@media (max-width: 720px) {
+  html {
+    font-size: 56.25%;/*1rem = root font size = 10px; 10px/16px = 62.5*/
+  }
+}
+@media (min-width: 980px) {
+  html {
+    font-size: 62.5%;/*1rem = root font size = 10px; 10px/16px = 62.5*/
+  }
+}
+
+/* Remove margins and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 1.2rem 0.8rem 1.2rem 4rem;
+    background: #eee;
+    font-size: 1.8rem;
+    transition: 0.2s;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+    background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    background: #888;
+    color: #fff;
+    /*text-decoration: line-through;*/
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 0.2rem 0.2rem 0;
+    top: 1rem;
+    left: 1.6rem;
+    transform: rotate(45deg);
+    height: 1.5rem;
+    width: 0.7rem;
+}
+
+/* Style the close button */
+a[href="#delete"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1.6rem 1.6rem 1.2rem 1.6rem;
+    text-decoration: none;
+}
+
+a[href="#delete"]:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Style the edit button */
+a[href="#edit"] {
+    position: absolute;
+    right: 8rem;
+    top: 0;
+    padding: 1.6rem 1.6rem 1.2rem 1.6rem;
+    text-decoration: none;
+}
+
+a[href="#edit"]:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Style the header */
+.header {
+    background-color: #f5da9f;
+    padding: 3rem 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Clear floats after the header */
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the input */
+input {
+    border: none;
+    width: 75%;
+    padding: 1rem;
+    float: left;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+/* Style the "Add" button */
+.addBtn {
+    padding: 0.9445rem;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+.donefilter {
+    padding: 0.8rem;
+    width: 33%;
+    background: #d9d9d9;
+    color: #555;
+    float: right;
+    text-align: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5rem;
+    border: solid 1px;
+}
+
+.donefilter:hover {
+    background-color: #bbb;
+}
+
+.notdonefilter {
+    padding: 0.8rem;
+    width: 33%;
+    background: #d9d9d9;
+    color: #555;
+    float: right;
+    text-align: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5rem;
+    border: solid 1px;
+
+}
+
+.notdonefilter:hover {
+    background-color: #bbb;
+}
+
+
+.nofilter {
+    padding: 0.8rem;
+    width: 34%;
+    background: #d9d9d9;
+    color: #555;
+    float: right;
+    text-align: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5rem;
+    border: solid 1px;
+
+}
+
+.nofilter:hover {
+    background-color: #bbb;
+}
