@@ -213,3 +213,14 @@ textarea,
     -webkit-user-select: text;
     user-select: text;
 }
+.back {
+  margin: 10px;
+  font-size: 1.5rem;  
+  color: #0275d8;
+}
+
+.back:hover {
+    margin: 10px;
+    font-size: 1.8rem;  
+    color: #044e8f;
+  }
