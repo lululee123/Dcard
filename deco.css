@@ -107,6 +107,21 @@ a[href="#edit"]:hover {
     color: white;
 }
 
+/* Style the doneedit button */
+a[href="#doneedit"] {
+    position: absolute;
+    right: 14rem;
+    top: 0;
+    padding: 1.6rem 1.6rem 1.2rem 1.6rem;
+    text-decoration: none;
+    color: #006aa6;
+}
+
+a[href="#doneedit"]:hover {
+    background-color: #f44336;
+    color: white;
+}
+
 /* Style the header */
 .header {
     background-color: #006aa6;
@@ -135,7 +150,7 @@ input {
 
 /* Style the "Add" button */
 .addBtn {
-    padding: 0.85rem;
+    padding: 1rem;
     width: 25%;
     background: #d9d9d9;
     color: #555;
@@ -161,7 +176,7 @@ input {
     cursor: pointer;
     transition: 0.3s;
     margin-top: 5rem;
-    border-left: solid 1px white;
+    border-left: solid 0.1rem white;
 }
 
 .donefilter:hover {
@@ -179,7 +194,7 @@ input {
     cursor: pointer;
     transition: 0.3s;
     margin-top: 5rem;
-    border-left: solid 1px white;
+    border-left: solid 0.1rem white;
 
 }
 
@@ -199,7 +214,7 @@ input {
     cursor: pointer;
     transition: 0.3s;
     margin-top: 5rem;
-    border-right: : solid 1px white;
+    border-right: solid 0.1rem white;
 
 }
 
@@ -213,14 +228,121 @@ textarea,
     -webkit-user-select: text;
     user-select: text;
 }
+
 .back {
-  margin: 10px;
+  margin: 1rem;
   font-size: 1.5rem;  
-  color: #0275d8;
+  color: #fff;
+  float: left;
 }
 
 .back:hover {
-    margin: 10px;
-    font-size: 1.8rem;  
-    color: #044e8f;
+ margin: 1rem;
+ font-size: 1.8rem;  
+ color: #fff;
+}
+
+.signup {
+  margin: 1rem;
+  font-size: 1.5rem;  
+  color: #fff;
+  float: right;
+}
+  
+.signup:hover  {
+  margin: 1rem;
+  font-size: 1.8rem;  
+  color: #fff;
+  float: right;
+}
+
+.login {
+    margin: 1rem;
+    font-size: 1.5rem;  
+    color: #fff;
+    float: right;
+}
+    
+.login:hover {
+  margin: 1rem;
+  font-size: 1.8rem;  
+  color: #fff;
+  float: right;
+}
+
+.logout {
+    margin: 1rem;
+    font-size: 1.5rem;  
+    color: #fff;
+    float: right;
+}
+    
+.logout:hover {
+  margin: 1rem;
+  font-size: 1.8rem;  
+  color: #fff;
+  float: right;
+}
+
+
+
+/*login.html*/
+body {
+    background: #fff;
+    padding: 0rem;
+    margin: 0rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
   }
+  
+  input, button, a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+  }
+  
+  .main-div, .loggedin-div {
+    width: 20%;
+    margin: 0rem auto;
+    margin-top: 15rem;
+    padding: 2rem;
+    display: none;
+  }
+  
+  .main-div input {
+    display: block;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    background: #fff;
+    padding: 1.5rem;
+    outline: none;
+    width: 100%;
+    margin-bottom: 2rem;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+  }
+  
+  .main-div input:focus {
+    border: 0.1rem solid #777;
+  }
+  
+  .main-div button, .loggedin-div button {
+    background: #5d8ffc;
+    color: #fff;
+    border: 0.1rem solid #5d8ffc;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+  }
+  
+  .main-div button:hover, .loggedin-div button:hover {
+    background: #fff;
+    color: #5d8ffc;
+    border: 0.1rem solid #5d8ffc;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Firebase SIGNUP</title>
+  <link rel="stylesheet" type="text/css" href="deco.css">
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>SIGNUP</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="signup()">GO</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para"></p>
+    <a href="index.html">BACK TO TODO LIST</a>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBqd2lmJTdVxcmAMUtmVjNNOef9JkHCvJA",
+      authDomain: "todolist-7a64c.firebaseapp.com",
+      databaseURL: "https://todolist-7a64c.firebaseio.com",
+      projectId: "todolist-7a64c",
+      storageBucket: "todolist-7a64c.appspot.com",
+      messagingSenderId: "248405903996"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="signup.js"></script>
+
+</body>
+</html>
