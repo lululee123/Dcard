@@ -19,9 +19,6 @@ function newElement() {
   $("#myInput").val("");
 };
 
-// on clicking the add button
-$("#add").click(newElement);
-
 // for the edit button
 $(document).on("click", 'a[href="#edit"]', function () {
   // make the span editable and focus it
