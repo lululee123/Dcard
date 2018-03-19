@@ -272,14 +272,14 @@ textarea,
 
 .logout {
     margin: 1rem;
-    font-size: 1.5rem;  
+    font-size: 2rem;  
     color: #fff;
     float: right;
 }
     
 .logout:hover {
   margin: 1rem;
-  font-size: 1.8rem;  
+  font-size: 2.3rem;  
   color: #fff;
   float: right;
 }
